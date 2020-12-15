@@ -113,7 +113,7 @@ def main(year, startdate, enddate):
                 if id not in done_id:
                     html = row[6]
                     con_list = []
-                    for y in range(year, 2021):
+                    for y in range(int(year), 2021):
                         if y == year:
                             contribu = crawl(id, html, '%s-12-01'%y, '%s-12-31'%y, date, '%s-12-31'%y)
                         elif y == 2020:
